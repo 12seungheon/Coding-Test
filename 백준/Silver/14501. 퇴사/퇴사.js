@@ -10,7 +10,7 @@ const P = lines.map((s) => Number(s.split(" ")[1]));
 let ans = 0;
 
 function dfs(day, sum) {
-  if (day >= N) {
+  if (day > N) {
     if (sum > ans) ans = sum;
     return;
   }
